@@ -14,7 +14,7 @@ name_on_order = st.text_input('Name on Smoothie:')
 st.write('Name on your smoothie will be: ', name_on_order)
 
 # Thread-safe container connection
-conn = st.connection("snowflake", type="snowflake")
+conn = st.connection("snowflake")
 session = conn.session()
 
 
