@@ -1,9 +1,0 @@
-name: snowpark-env
-channels:
-  - snowflake
-  - conda-forge
-dependencies:
-  - python=3.11
-  - micromamba
-  - streamlit
-  - snowflake-snowpark-python
