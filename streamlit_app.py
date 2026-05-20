@@ -14,8 +14,9 @@ name_on_order = st.text_input('Name on Smoothie:')
 st.write('Name on your smoothie will be: ', name_on_order)
 
 # Thread-safe container connection
-conn = st.connection("snowflake")
+conn = st.connection("snowflake", type="snowflake")
 session = conn.session()
+
 
 # Fetch data and extract the specific column values for the multiselect list
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
